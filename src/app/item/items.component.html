@@ -1,0 +1,18 @@
+<ActionBar title="{{ 'Sitetitle' | transloco }}"></ActionBar>
+
+<Stacklayout>
+
+    <Label text="{{ 'Sitetitle' | transloco }}"></Label> <!-- pipe works -->
+    <!-- <Label [translate]="'Sitetitle'"></Label> --> <!-- doesn't work -->
+    <!-- <Label translate>'Sitetitle'</Label> --> <!-- doesn't work -->
+
+
+    <button text="en" (tap)="useLanguage('en')"></button>
+    <button text="es" (tap)="useLanguage('es')"></button>
+    <button text="nl" (tap)="useLanguage('nl')"></button>
+
+
+    <button text="fr" (tap)="useLanguage('fr')"></button>
+    <button text="add fr" (tap)="add('fr')"></button>
+
+</Stacklayout>
